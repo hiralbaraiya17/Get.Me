@@ -31,6 +31,7 @@ public class EventResult extends Fragment {
         return inflater.inflate(R.layout.event_result_fragment, container, false);
     }
 
+    //this is commit test
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
