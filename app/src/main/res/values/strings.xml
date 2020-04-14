@@ -7,9 +7,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Profile</string>
+    <string name="menu_gallery">Events</string>
+    <string name="menu_slideshow">Events</string>
 
     <string name="home_second">Home Second</string>
+    <string-array name="array_event_names">
+            <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+        <item>Event 4</item>
+    </string-array>
 </resources>

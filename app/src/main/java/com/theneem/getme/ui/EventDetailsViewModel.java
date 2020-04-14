@@ -1,14 +1,14 @@
-package com.theneem.getme.ui.EventResult;
+package com.theneem.getme.ui;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class EventResultViewModel extends ViewModel {
+public class EventDetailsViewModel extends ViewModel {
     // TODO: Implement the ViewModel
     private MutableLiveData<String> mText;
 
-    public EventResultViewModel() {
+    public EventDetailsViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }
