@@ -32,19 +32,19 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.theneem.getme.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_event"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.theneem.getme.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_myprofile"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_eventresult"
         android:name="com.theneem.getme.ui.EventResult.EventResult"
-        android:label="Event Result"
+        android:label="@string/menu_registerevent"
         tools:layout="@layout/event_result_fragment" />
 
 

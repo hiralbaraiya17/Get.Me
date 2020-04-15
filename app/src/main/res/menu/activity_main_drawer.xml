@@ -11,14 +11,26 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="@string/menu_event" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_myprofile" />
         <item
             android:id="@+id/nav_eventresult"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Event Result" />
+            android:title="@string/menu_registerevent" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/about">
+        <item
+            android:id="@+id/nav_howitworks"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_howitworks" />
+        <item
+            android:id="@+id/nav_aboutgetme"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_aboutgetme" />
+
     </group>
 </menu>

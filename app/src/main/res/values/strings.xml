@@ -7,9 +7,14 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Profile</string>
-    <string name="menu_gallery">Events</string>
-    <string name="menu_slideshow">Events</string>
+    <string name="menu_home">Get.Me</string>
+    <string name="menu_event">Get.Me Events</string>
+    <string name="menu_myprofile">My.Profile </string>
+    <string name="menu_registerevent">Register Event </string>
+
+    <string name="menu_howitworks">How It Works </string>
+    <string name="menu_aboutgetme">About Get Me </string>
+
 
     <string name="home_second">Home Second</string>
     <string-array name="array_event_names">
