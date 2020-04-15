@@ -28,7 +28,7 @@ public class SlideshowFragment extends Fragment {
     private SlideshowViewModel slideshowViewModel;
     public String[] arrayeventList = {"EVENT 1", "EVENT 2", "EVENT 3", "EVENT 4"};
     private int[] IMAGES = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4};
-
+//Test
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
