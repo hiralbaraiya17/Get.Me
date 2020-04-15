@@ -21,6 +21,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.theneem.getme.R;
+import com.theneem.getme.ui.EventDetailsFragment;
 import com.theneem.getme.ui.EventDetailsViewModel;
 
 public class SlideshowFragment extends Fragment {
@@ -37,6 +38,12 @@ public class SlideshowFragment extends Fragment {
         ListView listView = root.findViewById(R.id.lv_event_list);
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
         return root;
     }
     class CustomAdapter extends BaseAdapter{
