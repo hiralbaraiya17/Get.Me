@@ -18,7 +18,7 @@
 
     <string name="home_second">Home Second</string>
     <string-array name="array_event_names">
-            <item>Event 1</item>
+        <item>Event 1</item>
         <item>Event 2</item>
         <item>Event 3</item>
         <item>Event 4</item>

@@ -15,6 +15,8 @@
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
     </fragment>
+
+
     <fragment
         android:id="@+id/nav_home_second"
         android:name="com.theneem.getme.ui.home.HomeSecondFragment"

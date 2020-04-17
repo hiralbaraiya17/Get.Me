@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -20,6 +21,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.theneem.getme.EventActivity;
 import com.theneem.getme.R;
 import com.theneem.getme.ui.EventDetailsFragment;
 import com.theneem.getme.ui.EventDetailsViewModel;
@@ -35,6 +37,12 @@ public class SlideshowFragment extends Fragment {
         slideshowViewModel =
                 ViewModelProviders.of(this).get(SlideshowViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+
+        EditText txtSearch = (EditText) root.findViewById(R.id.txtSearch);
+        EventActivity eventActivity = (EventActivity) getActivity();
+        txtSearch.setText(eventActivity.getMyData());
+
+
         ListView listView = root.findViewById(R.id.lv_event_list);
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);

@@ -25,6 +25,7 @@ public class EventDetailsFragment extends Fragment {
         eventDetailsViewModel =
                 ViewModelProviders.of(this).get(EventDetailsViewModel.class);
         View root = inflater.inflate(R.layout.event_result_fragment, container, false);
+       /*
         final TextView textView = root.findViewById(R.id.text_gallery);
         eventDetailsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
@@ -32,6 +33,7 @@ public class EventDetailsFragment extends Fragment {
                 textView.setText(s);
             }
         });
+        */
         return root;
     }
 }
