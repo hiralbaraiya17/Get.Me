@@ -26,7 +26,7 @@ public class EventActivity extends AppCompatActivity {
         setContentView(R.layout.activity_event);
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.mainLayout,new SlideshowFragment());
+        fragmentTransaction.add(R.id.eventContainer,new SlideshowFragment());
         fragmentTransaction.commit();
 
 

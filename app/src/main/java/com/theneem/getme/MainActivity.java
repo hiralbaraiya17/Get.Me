@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.main_container,new HomeFragment());
-        fragmentTransaction.commit();
+        ///FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        //fragmentTransaction.add(R.id.main_container,new HomeFragment());
+        //fragmentTransaction.commit();
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);

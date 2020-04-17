@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".EventActivity">
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/event_common" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
