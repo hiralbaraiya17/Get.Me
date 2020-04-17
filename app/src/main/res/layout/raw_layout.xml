@@ -12,13 +12,50 @@
         android:layout_height="79dp"
         android:baselineAligned="false"
         android:contentDescription="TODO"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/ic_launcher_foreground"
         tools:ignore="VectorDrawableCompat" />
 
-    <TextView
-        android:id="@+id/raw_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:text="TextView" />
+    <LinearLayout
+        android:layout_width="207dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/raw_tv"
+            android:layout_width="203dp"
+            android:layout_height="42dp"
+            android:paddingLeft="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/raw_tv_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/raw_tv_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Start Date - End Date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="@android:color/background_light"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </LinearLayout>
+
 </LinearLayout>
