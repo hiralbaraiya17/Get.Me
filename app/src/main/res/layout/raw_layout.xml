@@ -1,61 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="20dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
 
+
+    <!-- Thumbnail Image -->
     <ImageView
         android:id="@+id/raw_img"
-        android:layout_width="96dp"
-        android:layout_height="79dp"
-        android:baselineAligned="false"
-        android:contentDescription="TODO"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:ignore="VectorDrawableCompat" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
 
-    <LinearLayout
-        android:layout_width="207dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/raw_tv"
-            android:layout_width="203dp"
-            android:layout_height="42dp"
-            android:paddingLeft="20dp"
-            android:text="TextView" />
 
-        <TextView
-            android:id="@+id/raw_tv_Description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="20dp"
-            android:text="Description" />
+    <!-- Title -->
 
-        <TextView
-            android:id="@+id/raw_tv_dates"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="20dp"
-            android:text="Start Date - End Date" />
+    <TextView
+        android:id="@+id/txtEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/raw_img"
+        android:layout_toRightOf="@+id/raw_img"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
 
-    </LinearLayout>
+    <!-- DAtes -->
+<!--
+    <TextView
+        android:id="@+id/lblStartDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEventName"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/raw_img"
+        android:textSize="@dimen/rating"
+        android:text="Start Date:"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+-->
+    <TextView
+        android:id="@+id/txtStartDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEventName"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/raw_img"
+        android:layout_marginRight="@dimen/_180sdp"
+        android:textSize="@dimen/rating" />
 
-        <ImageButton
-            android:id="@+id/btn_next"
-            android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:background="@android:color/background_light"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
-    </LinearLayout>
+<!--
+    <TextView
+        android:id="@+id/lblEndDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblStartDate"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/raw_img"
+        android:textSize="@dimen/rating"
+        android:text="Start Date:"/>
+-->
 
-</LinearLayout>
+   <!-- Release Year -->
+    <TextView
+        android:id="@+id/txtEndDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStartDate"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/raw_img"
+        android:textSize="@dimen/rating"  />
+
+
+    <!-- Desc -->
+    <TextView
+        android:id="@+id/txtEventDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEndDate"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/raw_img"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+
+
+    <!-- Release Year -->
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/year"
+
+        android:text="More..."
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>
