@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E2E5E9"
+        tools:context=".ui.howitwork.HowItWorks">
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/bg"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_180sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="As Simple as 1 , 2 And 3"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/txtStep1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="cursive"
+                                android:text="01 - Find a Club"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_17ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtDesc1"
+                                android:layout_width="192dp"
+                                android:layout_height="86dp"
+                                android:layout_below="@+id/txtStep1"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/average"
+                                android:text="Visit nearby Science club, find a suitable one and make that your home club. "
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="165dp"
+                                android:layout_height="165dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_toRightOf="@+id/txtDesc1"
+                                android:src="@drawable/step1"></ImageView>
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow android:layout_width="match_parent"
+
+                        >
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:paddingRight="16dp">
+
+                            <ImageView
+                                android:id="@+id/imgStep2"
+                                android:layout_width="167dp"
+                                android:layout_height="153dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginEnd="30dp"
+                                android:src="@drawable/step2"></ImageView>
+
+                            <TextView
+                                android:id="@+id/txtStep2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/imgStep2"
+                                android:fontFamily="cursive"
+                                android:text="02 - Join a Club"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_17ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="156dp"
+                                android:layout_height="86dp"
+                                android:layout_below="@+id/txtStep2"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_toRightOf="@+id/imgStep2"
+                                android:fontFamily="@font/average"
+                                android:text="Enjoy regular Science gathering at your club, follow the Relisant Manual of 12 problems and enjoy solving and demonstrating your solution to the club and world. "
+                                android:textSize="16sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/txtStep3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="cursive"
+                                android:text="03 - Science Kits"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_17ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtDesc3"
+                                android:layout_width="192dp"
+                                android:layout_height="168dp"
+                                android:layout_below="@+id/txtStep3"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/average"
+                                android:text="Enjoy Welcome Kit, Club owned kits and National kits or consumable material to enjoy for a month full of experiment and enjoy it as you want without any restriction."
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:layout_toRightOf="@+id/txtDesc3"
+                                android:src="@drawable/step1"></ImageView>
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:fontFamily="cursive"
+                    android:text="ScienceClub Membership Includes..."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtBenifit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="01 ~ Access to one or more Science Kit Per month"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtBenifit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="02 ~ Unlimited Events, Activities and Competitions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtBenifit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="03 ~ Represent your Club to represent in Science War"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtBenifit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="04 ~ Chance to Win Chief Scintific Advisor Title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtBenifit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="05 ~ Present your science idea, project and challangs"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtBenifit6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="06 ~ Get guidance of global community enthusiastics"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimary">#2C2C2C</color> <!-- #6200EE -->
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="yellow">#FCC000</color>
+
+
+    <color name="btn_backcolor">#ffffff</color>
+
+
 
     <color name="genre">#666666</color>
     <color name="year">#888888</color>

@@ -18,4 +18,9 @@
     <dimen name="rating">15dip</dimen>
     <dimen name="genre">13dip</dimen>
     <dimen name="year">12dip</dimen>
+    <dimen name="_60sdp" >60dp</dimen>
+    <dimen name="_17ssp" >17dp</dimen>
+    <dimen name="_14ssp" >14dp</dimen>
+    <dimen name="_5sdp" >5dp</dimen>
+    <dimen name="_40sdp" />
 </resources>

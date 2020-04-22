@@ -32,14 +32,14 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_Events"
         android:name="com.theneem.getme.ui.gallery.GalleryFragment"
         android:label="@string/menu_event"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.theneem.getme.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_Profile"
+        android:name="com.theneem.getme.ui.profile.Profile"
         android:label="@string/menu_myprofile"
         tools:layout="@layout/fragment_slideshow" />
 
@@ -48,6 +48,21 @@
         android:name="com.theneem.getme.ui.EventResult.EventResult"
         android:label="@string/menu_registerevent"
         tools:layout="@layout/event_result_fragment" />
+
+    <fragment
+        android:id="@+id/nav_howitworks"
+        android:name="com.theneem.getme.ui.howitwork.HowItWorks"
+        android:label="@string/menu_howitworks"
+        tools:layout="@layout/how_it_works_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_aboutgetme"
+        android:name="com.theneem.getme.ui.aboutgetme.AboutGetMe"
+        android:label="@string/menu_myprofile"
+        tools:layout="@layout/about_get_me_fragment" />
+
+
 
 
 </navigation>
