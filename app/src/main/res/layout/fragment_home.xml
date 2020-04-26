@@ -28,17 +28,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/btn_backcolor"
+        android:background="@color/colorPrimary"
 
         android:fontFamily="serif"
+        android:onClick="btnSearch_click"
         android:text="Get.Me"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/txtSearch"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="btnSearch_click"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

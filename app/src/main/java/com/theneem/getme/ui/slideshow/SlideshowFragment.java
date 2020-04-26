@@ -44,11 +44,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import com.squareup.picasso.Picasso;
+import android.view.View.OnClickListener;
 
 
 
 
-public class SlideshowFragment extends Fragment {
+
+public class SlideshowFragment extends Fragment implements OnClickListener {
     private SlideshowViewModel slideshowViewModel;
     public String[] arrayeventList; //  = {"EVENT 1", "EVENT 2", "EVENT 3", "EVENT 4"};
     public String[] arrayeventDescList;
@@ -80,9 +82,24 @@ public class SlideshowFragment extends Fragment {
          txtSearch = (EditText) root.findViewById(R.id.txtSearch);
         EventActivity eventActivity = (EventActivity) getActivity();
         txtSearch.setText(eventActivity.getMyData());
+/*
+        Button btnSearch = (Button)root.findViewById(R.id.btnGetMe);
+        btnSearch.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public  void onClick(View v)
+            {
+                // do something
+                Toast.makeText(getContext(),"hello", Toast.LENGTH_LONG);
+            }
+        });
+
+*/
 
 
-        getJSON("http://scienceclub.in/getmeapi/getevents.php");
+
+
+        getJSON("http://scienceclub.in/getmeapi/searchevents.php?ename=" + eventActivity.getMyData() );
 
 
          listView = root.findViewById(R.id.lv_event_list);
@@ -93,6 +110,13 @@ public class SlideshowFragment extends Fragment {
 
         return root;
     }
+
+    @Override
+    public void onClick(View v) {
+        Toast.makeText(getContext(),"inside click ", Toast.LENGTH_LONG);
+    }
+
+
     class CustomAdapter extends BaseAdapter{
 
         @Override

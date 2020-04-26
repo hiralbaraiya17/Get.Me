@@ -11,12 +11,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.theneem.getme.ui.EventDetailsFragment;
 import com.theneem.getme.ui.home.HomeFragment;
 import com.theneem.getme.ui.slideshow.SlideshowFragment;
 
-public class EventActivity extends AppCompatActivity {
+public class EventActivity extends AppCompatActivity  {
 
 
     private  String searchString;
@@ -51,11 +52,16 @@ public class EventActivity extends AppCompatActivity {
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void btnSearch_click(View view) {
-    }
+
 
     public String getMyData() {
         return searchString;
+    }
+
+
+    public void btnSearch_click(View view) {
+
+
     }
 
 

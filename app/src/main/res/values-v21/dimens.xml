@@ -4,16 +4,16 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
-    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="_130sdp" />
-    <dimen name="_20sdp" />
-    <dimen name="_30sdp" />
-    <dimen name="_10sdp" />
-    <dimen name="_15ssp" />
-    <dimen name="_15sdp" />
-    <dimen name="_8sdp" />
-    <dimen name="_180sdp" />
+    <dimen name="_130sdp" >130dp</dimen>
+    <dimen name="_20sdp" >20dp</dimen>
+    <dimen name="_30sdp" >30dp</dimen>
+    <dimen name="_10sdp" >10dp</dimen>
+    <dimen name="_15ssp" >15dp</dimen>
+    <dimen name="_15sdp" >15dp</dimen>
+    <dimen name="_8sdp" >8dp</dimen>
+    <dimen name="_180sdp" >180dp</dimen>
 
     <dimen name="title">17dp</dimen>
     <dimen name="rating">15dip</dimen>
