@@ -24,7 +24,7 @@ public class EventDetailsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         eventDetailsViewModel =
                 ViewModelProviders.of(this).get(EventDetailsViewModel.class);
-        View root = inflater.inflate(R.layout.event_result_fragment, container, false);
+        View root = inflater.inflate(R.layout.event_details_fragment, container, false);
        /*
         final TextView textView = root.findViewById(R.id.text_gallery);
         eventDetailsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

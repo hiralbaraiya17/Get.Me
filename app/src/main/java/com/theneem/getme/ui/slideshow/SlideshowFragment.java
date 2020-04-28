@@ -44,19 +44,15 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import com.squareup.picasso.Picasso;
-import android.view.View.OnClickListener;
+import com.theneem.getme.ui.RegistrationFragment;
 
 
-
-
-
-public class SlideshowFragment extends Fragment implements OnClickListener {
+public class SlideshowFragment extends Fragment {
     private SlideshowViewModel slideshowViewModel;
     public String[] arrayeventList; //  = {"EVENT 1", "EVENT 2", "EVENT 3", "EVENT 4"};
     public String[] arrayeventDescList;
     public String[] arrayeventStartDateList;
     public String[] arrayeventEndDateList;
-
 
     private String[] IMAGES; //  = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4};
     private FragmentActivity myContext;
@@ -64,12 +60,6 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
     EditText txtSearch;
     ListView listView;
 
-
-    //    @Override
-//    public void onAttach(Activity activity) {
-//        myContext=(FragmentActivity) activity;
-//        super.onAttach(activity);
-//    }
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -82,41 +72,34 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
          txtSearch = (EditText) root.findViewById(R.id.txtSearch);
         EventActivity eventActivity = (EventActivity) getActivity();
         txtSearch.setText(eventActivity.getMyData());
-/*
-        Button btnSearch = (Button)root.findViewById(R.id.btnGetMe);
-        btnSearch.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public  void onClick(View v)
-            {
-                // do something
-                Toast.makeText(getContext(),"hello", Toast.LENGTH_LONG);
-            }
-        });
-
-*/
 
 
-
-
-        getJSON("http://scienceclub.in/getmeapi/searchevents.php?ename=" + eventActivity.getMyData() );
+        getJSON("http://scienceclub.in/getmeapi/getevents.php");
 
 
          listView = root.findViewById(R.id.lv_event_list);
        // CustomAdapter customAdapter = new CustomAdapter();
         //listView.setAdapter(customAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Create new fragment and transaction
+                Fragment newFragment = new EventDetailsFragment();
+                // consider using Java coding conventions (upper first char class names!!!)
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
+                // Replace whatever is in the fragment_container view with this fragment,
+                // and add the transaction to the back stack
+                transaction.replace(R.id.nav_host_fragment, newFragment);
+                transaction.addToBackStack(null);
 
+                // Commit the transaction
+                transaction.commit();
+            }
+        });
 
         return root;
     }
-
-    @Override
-    public void onClick(View v) {
-        Toast.makeText(getContext(),"inside click ", Toast.LENGTH_LONG);
-    }
-
-
     class CustomAdapter extends BaseAdapter{
 
         @Override
@@ -158,12 +141,7 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
             return convertView;
         }
     }
-
-
-
-
     // get data from php service
-
 
     //this method is actually fetching the json string
     private void getJSON(final String urlWebService) {
@@ -205,8 +183,6 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
             @Override
             protected String doInBackground(Void... voids) {
 
-
-
                 try {
                     //creating a URL
                     URL url = new URL(urlWebService);
@@ -235,16 +211,12 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
                 } catch (Exception e) {
                     return null;
                 }
-
             }
         }
-
         //creating asynctask object and executing it
         GetJSON getJSON = new GetJSON();
         getJSON.execute();
     }
-
-
 
     private void loadIntoListView(String json) throws JSONException {
         //creating a json array from the json string
@@ -272,14 +244,10 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
             arrayeventStartDateList[i] = obj.getString("event_startdate");
             arrayeventEndDateList[i] = obj.getString("event_enddate");
             IMAGES[i] =  obj.getString("events_img");
-
-
         }
-
 
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
-
 
         //the array adapter to load data into list
         //ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, heroes);
@@ -287,7 +255,4 @@ public class SlideshowFragment extends Fragment implements OnClickListener {
         //attaching adapter to listview
         //listView.setAdapter(arrayAdapter);
     }
-
-
-
 }

@@ -7,6 +7,29 @@
     tools:context=".ui.home.HomeFragment">
 
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="363dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="194dp"
+            android:background="@color/btn_backcolor"
+            android:text="Registration" />
+    </RelativeLayout>
+
     <EditText
         android:id="@+id/txtSearch"
         android:layout_width="0dp"

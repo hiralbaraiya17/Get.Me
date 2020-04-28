@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/raw_img"
         android:layout_toRightOf="@+id/raw_img"
+        android:text="Name"
         android:textSize="@dimen/title"
         android:textStyle="bold" />
 
@@ -46,8 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtEventName"
         android:layout_marginTop="1dip"
-        android:layout_toRightOf="@+id/raw_img"
         android:layout_marginRight="@dimen/_180sdp"
+        android:layout_toRightOf="@+id/raw_img"
+        android:text="Start Date"
         android:textSize="@dimen/rating" />
 
 <!--
@@ -70,7 +72,8 @@
         android:layout_below="@id/txtStartDate"
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/raw_img"
-        android:textSize="@dimen/rating"  />
+        android:text="End Date"
+        android:textSize="@dimen/rating" />
 
 
     <!-- Desc -->
@@ -81,6 +84,7 @@
         android:layout_below="@id/txtEndDate"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@+id/raw_img"
+        android:text="Event Description"
         android:textColor="@color/genre"
         android:textSize="@dimen/genre" />
 
